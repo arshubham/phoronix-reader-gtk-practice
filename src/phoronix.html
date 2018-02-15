@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>Linux Hardware Reviews, Open-Source Benchmarks &amp; Linux Performance - Phoronix</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="phxcms-css/phoronix-10.css?2016">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<link href="phxcms7-css/shadowbox.css" rel="stylesheet" type="text/css" />
+		<script src="phxcms7-css/shadowbox.js" type="text/javascript"></script>
+		<meta name="keywords" content="Phoronix, Linux Hardware Reviews, Linux hardware benchmarks, Linux Hardware, Linux benchmarking, Desktop Linux, GNU/Linux benchmarks, Open Source AMD, Linux How To, X.Org drivers, Ubuntu hardware, Phoronix Test Suite" />
+		<meta name="Description" content="Phoronix is the leading technology website for Linux hardware reviews, open-source news, Linux benchmarks, open-source benchmarks, and computer hardware tests." />
+		<link rel="alternate" type="application/rss+xml" title="Phoronix" href="rss.php" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+				<!-- PHXCMS-11 (phoronix.com) -->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-1978569-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+
+		    Shadowbox.init({
+		       skipSetup: true
+		   });
+		</script>
+			</head>
+	<body style="overflow: initial !important;">
+		<div id="headerwrap">
+			<div class="wcontainer defpadding">
+				<a href="?page=home"><img id="logo" alt="Phoronix" src="/phxcms7-css/phoronix.png" style="height: 40px; margin-top: 5px;margin-left: 5px;" /></a>
+				<div id="headerright">
+					<div id="social">
+					    <a href="https://www.phoronix.com/rss.php" class="icon-rss"></a>
+					    <a href="https://www.google.com/+phoronix" class="icon-gplus"></a>
+					    <a href="https://twitter.com/Phoronix" class="icon-twitter"></a>
+					    <a href="https://www.facebook.com/Phoronix" class="icon-facebook"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="litemenu">
+		    <ul>
+		        <li><a href="?page=phoronix_articles">Articles &amp; Reviews</a></li>
+		        <li><a href="?page=phoronix_news">News Archive</a></li>
+		        <li><a href="https://www.phoronix.com/forums/">Forums</a></li>
+		        <li><a href="?page=phoronix_premium">Premium</a></li>		        <li class="categ icon-angle-circled-down"><span> Categories</span></li>
+		        <li><a href="?page=category&amp;item=Computers">Computers</a></li>
+				<li><a href="?page=category&amp;item=Display+Drivers">Display Drivers</a></li>
+				<li><a href="?page=category&amp;item=Graphics+Cards">GPUs / Graphics Cards</a></li>
+				<li><a href="?page=category&amp;item=Linux+Gaming">Linux Gaming</a></li>
+				<li><a href="?page=category&amp;item=Memory">Memory</a></li>
+				<li><a href="?page=category&amp;item=Motherboards">Motherboards</a></li>
+				<li><a href="?page=category&amp;item=Processors">CPUs / Processors</a></li>
+				<li><a href="?page=category&amp;item=Software">Software</a></li>
+				<li><a href="?page=category&amp;item=Storage">Storage</a></li>
+				<li><a href="?page=category&amp;item=Operating+Systems">Operating Systems</a></li>
+				<li><a href="?page=category&amp;item=Peripherals">Peripherals</a></li>
+				<li id="closelid">Close</li>
+		    </ul>		    
+		</div>
+		<div id="menuwrap">
+			<div class="wcontainer">
+				<ul id="linklist">
+					<li id="menubutton"><span class="icon-menu"></span>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="?page=phoronix_articles">Articles &amp; Reviews</a>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="?page=phoronix_news">News Archive</a>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="https://www.phoronix.com/forums/">Forums</a>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="?page=phoronix_premium">Premium</a>
+					</li>					<li id="categories-link" class="menulink">
+						<span class="menunolink icon-angle-circled-down"> Categories</span>
+						<div id="categories-list">
+							<div id="categories-content">
+								<a href="?page=category&amp;item=Computers">Computers</a>
+								<a href="?page=category&amp;item=Graphics+Cards">GPUs / Graphics Cards</a>
+								<a href="?page=category&amp;item=Linux+Gaming">Linux Gaming</a>
+								<a href="?page=category&amp;item=Memory">Memory</a>
+								<a href="?page=category&amp;item=Motherboards">Motherboards</a>
+								<a href="?page=category&amp;item=Processors">CPUs / Processors</a>
+								<a href="?page=category&amp;item=Software">Software</a>
+								<a href="?page=category&amp;item=Storage">Storage</a>
+								<a href="?page=category&amp;item=Operating+Systems">Operating Systems</a>
+								<a href="?page=category&amp;item=Peripherals">Peripherals</a>
+							</div>
+						</div>
+					</li>
+					<li id="searchbox">
+						<div id="search">
+							<form action="https://www.google.com" id="cse-search-box" target="_blank">
+							  <div>
+							    <input type="hidden" name="cx" value="partner-pub-0253814508491313:1305299758" />
+							    <input type="hidden" name="ie" value="UTF-8" />
+							    <input type="text" name="q" />
+							    <input type="submit" name="sa" value="Search" />
+							  </div>
+							</form>
+
+							<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content-bg">
+			<div id="content">
+						<script type="text/javascript">
+  window.onload = function() {
+    setTimeout(function() {
+if(typeof aax_getad_mpb === 'undefined') 
+{
+	document.getElementById("c36430").style.display = 'block';
+}
+ }, 1000);  
+  };
+</script>
+<strong id="c36430" style="display: none; border: 1px solid #efefef; font-size: 11.5px; margin: 9px;"><strong style="font-weight: 800;">We Rely On Your Support:</strong>  Did you know that you can get <a href="http://www.phoronix.com/scan.php?page=phoronix_premium">Phoronix Premium</a> for under $3 per month? Try it today to view our site <span style="font-weight: 600;">ad-free, multi-page articles on a single page, and more</span> while the proceeds allow us to write more Linux hardware reviews.</strong>
+				<div id="main-wrap">
+					<div id="main">
+						<div style="text-align: center; overflow: hidden; margin-bottom: 30px;">
+								<script type='text/javascript' src='https://www.googletagservices.com/tag/js/gpt.js'>
+		googletag.pubads().definePassback('8456/IDG.Phoronix.com_Homepage', [[728,90]]).display();
+	</script>
+
+						</div>
+						<!-- google_ad_section_start --><article>
+							<header><a href="?page=news_item&amp;px=GLXVND-Lands-In-Master">GLXVND Support Lands In Git For X.Org Server 1.20</a></header>
+							<p>There's been a lot of activity in xorg-server Git the past few days, making it look like the developers may be trying to wrap up the very long X.Org Server 1.20 cycle. The latest major feature work landing is GLXVND.</p>
+							<div class="details">40 Minutes Ago - <a href="?page=news_topic&amp;q=X.Org">X.Org</a> - GLXVND<span class="comments"> - <a href="/forums/node/1007881">Add A Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Spectre-Meltdown-More-For-4.16">Spectre &amp; KPTI Get More Fixes In Linux 4.16, Offsets Some KVM Performance Losses</a></header>
+							<p>While we are past the Linux 4.16 merge window, more Spectre and Meltdown related improvements and changes are still being allowed into the kernel, similar to all the KPTI/Retpoline work that landed late in Linux 4.15. On Wednesday was another big batch of KPTI and Spectre work that has already been merged.</p>
+							<div class="details">3 Hours Ago - <a href="?page=news_topic&amp;q=Linux+Kernel">Linux Kernel</a> - Spectre + Meltdown<span class="comments"> - <a href="/forums/node/1007867">1 Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Mesa-V2-GL31-ARB-Compat">Marek Updates OpenGL 3.1 ARB_compatibility Support For Mesa</a></header>
+							<p>Last October well known open-source AMD driver developer Marek Olšák began work on OpenGL compatibility profile support for Mesa. This work is about OpenGL 3.1 with ARB_compatibility support, something generally relevant for workstation OpenGL users and one of the few remaining advantages of AMD's current proprietary OpenGL driver.</p>
+							<div class="details">3 Hours Ago - <a href="?page=news_topic&amp;q=Mesa">Mesa</a> - GL 3.1 + ARB_compatibility<span class="comments"> - <a href="/forums/node/1007864">4 Comments</a></span></div>
+						</article><script type="text/javascript" language="javascript" src="//c.amazon-adsystem.com/aax2/getads.js"></script>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+aax_getad_mpb({
+  "slot_uuid":"93d4eb99-5024-4d4f-b415-404f0c77b4eb"
+});
+//]]>
+</script>
+<article>
+							<header><a href="?page=news_item&amp;px=Wayland-Protocols-1.13">Wayland Protocols 1.13 Introduces New Input Timestamp Protocol</a></header>
+							<p>Jonas Ådahl on Wednesday announced Wayland-Protocols 1.13, the collection of stable and unstable protocols to Wayland.</p>
+							<div class="details">5 Hours Ago - <a href="?page=news_topic&amp;q=Wayland">Wayland</a> - Wayland Input Timestamps<span class="comments"> - <a href="/forums/node/1007836">2 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Intel-i965-Shader-FB-Fetch">Intel's Mesa Driver Gets Patches For New EXT_shader_framebuffer_fetch</a></header>
+							<p>Open-source Intel driver developer Francisco Jerez has sent out a set of 15 patches implementing a new version of the EXT_shader_framebuffer_fetch OpenGL extension.</p>
+							<div class="details">9 Hours Ago - <a href="?page=news_topic&amp;q=Intel">Intel</a> - EXT_shader_framebuffer_fetch<span class="comments"> - <a href="/forums/node/1007814">Add A Comment</a></span></div>
+						</article><div style="text-align: center; overflow: hidden; margin-bottom: 30px;"><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<div id='div-pg-ad-1506416552-3'>
+  <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.pubads().display('/8095840/.2_6876.3_phoronix.com_tier1', [728, 90], 'div-pg-ad-1506416552-3'); });
+  </script>
+</div>
+</div><h2>14 February</h2><article>
+							<header><a href="?page=news_item&amp;px=Linux-2018-Valentines-Day"><span style="font-weight: 600;">Show Your Love For Linux Hardware &amp; Benchmarking This Valentine's Day</span></a></header>
+							<p>While it was a very busy January testing all the fallout from Spectre and Meltdown, February has become just as busy with monitoring all of the Linux 4.16 changes and beginning those benchmarks, all the testing now around the Raven Ridge APUs, and today's release of Phoronix Test Suite 7.8 among a lot of other Linux hardware tests that are ongoing.</p>
+							<div class="details">10 Hours Ago - <a href="?page=news_topic&amp;q=Premium">Premium</a> - Valentine Support<span class="comments"> - <a href="/forums/node/1007685">2 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Ubuntu-16.04.4-LTS-Revised-Plan">Ubuntu 16.04.4 LTS Planned For Release 1 March</a></header>
+							<p>The delayed Ubuntu 16.04.4 point release is now expected to become available at the start of March.</p>
+							<div class="details">14 February 07:09 PM EST - <a href="?page=news_topic&amp;q=Ubuntu">Ubuntu</a> - Ubuntu 16.04.4 LTS<span class="comments"> - <a href="/forums/node/1007783">9 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Ubuntu-18.04-Stats-Plan">Canonical Pursuing A Hardware/Software Survey For Ubuntu Installations</a></header>
+							<p>Will Cooke, Canonical's Director of Ubuntu Desktop, has announced plans to collect more diagnostics data from Ubuntu installations. This would involve collecting system hardware/software details during the installation process and be uploaded to Ubuntu servers, but users could opt-out of said survey.</p>
+							<div class="details">14 February 06:48 PM EST - <a href="?page=news_topic&amp;q=Ubuntu">Ubuntu</a> - Anonymous System Reporting<span class="comments"> - <a href="/forums/node/1007780">13 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Wine-D3D12-First-Tiny-Bits">The First Stubs For Direct3D 12 Are Now In Wine Git</a></header>
+							<p>The first baby steps towards implementing Direct3D 12 in Wine are now present in the Git code-base for this week's Wine 3.2 release but it won't be anything remotely usable for a while.</p>
+							<div class="details">14 February 05:46 PM EST - <a href="?page=news_topic&amp;q=WINE">WINE</a> - Wine D3D12 Git<span class="comments"> - <a href="/forums/node/1007771">10 Comments</a></span></div>
+						</article><article class="important">
+							<header><a href="/vr.php?view=26019">AMD Vega 8 Graphics Performance On Linux With The Ryzen 3 2200G</a></header>
+							<p>Yesterday I posted the initial Ryzen 5 2400G Vega 11 Linux graphics benchmarks while for your viewing please today -- as well as this morning's 21-way Intel/AMD CPU Linux comparison that featured these new Raven Ridge APUs -- the results now completed are initial OpenGL and Vulkan performance figures for the Vega 8 graphics found on the Ryzen 3 2200G.</p>
+							<div class="details">14 February 02:50 PM EST - <a href="?page=category&amp;item=Graphics+Cards">Graphics Cards</a><span class="comments"> - <a href="/forums/node/1007729">17 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=GNOME-3.28-Beta-Released">GNOME 3.28 Beta Released With Many Improvements</a></header>
+							<p>Following a slight delay, the beta release of GNOME 3.28 is now available ahead of next month's official release.</p>
+							<div class="details">14 February 01:42 PM EST - <a href="?page=news_topic&amp;q=GNOME">GNOME</a> - GNOME 3.27.90<span class="comments"> - <a href="/forums/node/1007716">15 Comments</a></span></div>
+						</article><article class="important">
+							<header><a href="/vr.php?view=26015">AMD Ryzen 3 2200G + Ryzen 5 2400G Linux CPU Performance, 21-Way Intel/AMD Comparison</a></header>
+							<p>Yesterday I posted some initial Linux benchmarks of the Ryzen 5 2400G Raven Ridge APU when looking at the Vega 11 graphics, but for those curious about the CPU performance potential of the Ryzen 5 2400G and its ~$100 Ryzen 3 2200G sibling, here are our first CPU benchmarks of these long-awaited AMD APUs. These two current Raven Ridge desktop APUs are compared to a total of 21 different Intel and AMD processors dating back to older Kaveri APUs and FX CPUs and Ivy Bridge on the Intel side.</p>
+							<div class="details">14 February 11:30 AM EST - <a href="?page=category&amp;item=Processors">Processors</a><span class="comments"> - <a href="/forums/node/1007647">24 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Phoronix-Test-Suite-7.8.0">Phoronix Test Suite 7.8 Officially Released For Open-Source, Cross-OS Benchmarking</a></header>
+							<p>Phoronix Test Suite 7.8.0-Folldal is now officially available as the first quarterly update to our open-source benchmarking software of 2018 and the last major release prior to the big Phoronix Test Suite 8.0 milestone slated for this summer.</p>
+							<div class="details">14 February 11:20 AM EST - <a href="?page=news_topic&amp;q=Phoronix+Test+Suite">Phoronix Test Suite</a> - Phoronix Test Suite 7.8.0<span class="comments"> - <a href="/forums/node/1007676">Add A Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=MPEG-2-Last-Patents-Expire">The Last Of The MPEG-2 Patents Have Expired</a></header>
+							<p>Just like with the recent expiry of the MP3 patents and AC3, the last of the MPEG-2 patents have now expired.</p>
+							<div class="details">14 February 09:49 AM EST - <a href="?page=news_topic&amp;q=Free+Software">Free Software</a> - MPEG-2<span class="comments"> - <a href="/forums/node/1007699">10 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=CompuLab-Airtop2-Inferno">Airtop2 Inferno Offers i7-7700K + GeForce GTX 1080 While Being Fanless</a></header>
+							<p>Two years ago we reviewed the CompuLab Airtop as an interesting, industrial-grade, fanless PC that packed in high-end hardware of the time and worked out great initially and continues doing a phenomenal job at passively cooling the PC while running in our benchmark lab. CompuLab has now announced the Airtop2 and Airtop2 Inferno that is an even more impressive cooling feat.</p>
+							<div class="details">14 February 09:39 AM EST - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - CompuLab<span class="comments"> - <a href="/forums/node/1007641">5 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Ubuntu-18.04-Getting-Mesa-18.0">Ubuntu 18.04 LTS Landing Mesa 18.0, Enabling GLVND</a></header>
+							<p>Ubuntu developers are in the process of landing Mesa 18.0 within the "Bionic Beaver" archive for the upcoming 18.04 LTS distribution release. In the process they are also enabling GLVND for allowing the Mesa and NVIDIA proprietary drivers more happily co-exist on the same system.</p>
+							<div class="details">14 February 08:00 AM EST - <a href="?page=news_topic&amp;q=Ubuntu">Ubuntu</a> - Mesa 18 On Ubuntu 18.04<span class="comments"> - <a href="/forums/node/1007626">12 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Intel-DRM-Next-4.17-First">Initial Icelake Support Heading To Linux 4.17, Many Bug Fixes Thanks To CI Testing</a></header>
+							<p>Now that the Linux 4.16 merge window ended this past weekend, Intel has submitted their first pull request to DRM-Next of material they want to get in for Linux 4.17.</p>
+							<div class="details">14 February 06:55 AM EST - <a href="?page=news_topic&amp;q=Intel">Intel</a> - Linux 4.17 DRM-Next<span class="comments"> - <a href="/forums/node/1007620">4 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=AMDVLK-GFX9-Enhancements">AMDVLK/XGL Gets Vega Enhancements, LLPC Optimizations</a></header>
+							<p>AMD developers working on their official, cross-platform XGL/AMDVLK driver code have pushed out another batch of changes for benefiting their official AMD Vulkan Linux driver.</p>
+							<div class="details">14 February 05:49 AM EST - <a href="?page=news_topic&amp;q=Radeon">Radeon</a> - AMDVLK<span class="comments"> - <a href="/forums/node/1007608">Add A Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=DRM-Next-Time-For-HDCP">HDCP Content Protection Support Called For Integration In DRM-Next / Linux 4.17</a></header>
+							<p>Initial support for High-bandwidth Digital Content Protection (HDCP) with the Intel DRM driver is being called for pulling into DRM-Next that in turn will land with Linux 4.17.</p>
+							<div class="details">14 February 05:37 AM EST - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - Content Protection<span class="comments"> - <a href="/forums/node/1007605">14 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=GSoC-2018-Organizations">X.Org, GNOME &amp; The 200+ Other Organizations For GSoC 2018</a></header>
+							<p>If you are a student interested in working on an open-source project this summer while gaining valuable experience and earning a stipend, it's time to start thinking about the 2018 Google Summer of Code.</p>
+							<div class="details">14 February 05:28 AM EST - <a href="?page=news_topic&amp;q=Google">Google</a> - Google Summer of Code<span class="comments"> - <a href="/forums/node/1007606">2 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=DragonFlyBSD-Ptr-Restrict">DragonFlyBSD Adds New &quot;Ptr_Restrict&quot; Security Option</a></header>
+							<p>Just like the Linux developers, in the wake of the Spectre and Meltdown CPU vulnerabilities DragonFlyBSD developers have also been working on a variety of security improvements.</p>
+							<div class="details">14 February 05:09 AM EST - <a href="?page=news_topic&amp;q=BSD">BSD</a> - security.ptr_restrict<span class="comments"> - <a href="/forums/node/1007598">Add A Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Intel-2017Q4-Graphics-Stack">Intel 2017Q4 Graphics Stack Recipe Released</a></header>
+							<p>Intel's Open-Source Technology Center has announced their 2017Q4 graphics stack recipe, which comes down to all of the system components they currently recommend for making a great Intel Linux system.</p>
+							<div class="details">14 February 04:58 AM EST - <a href="?page=news_topic&amp;q=Intel">Intel</a> - Quarterly Stack<span class="comments"> - <a href="/forums/node/1007597">3 Comments</a></span></div>
+						</article><h2>13 February</h2><article>
+							<header><a href="?page=news_item&amp;px=Devuan-2.0-Beta">Devuan 2.0 Reaches Beta, Debian Without Systemd &amp; Now Based On Stretch</a></header>
+							<p>It's been a while since last having anything to report on Devuan, the Debian derivative focused on "init freedom" by shipping the Debian packages without any dependence on systemd. But just in time for Valentine's Day, Devuan 2.0 Beta is now available.</p>
+							<div class="details">13 February 07:55 PM EST - <a href="?page=news_topic&amp;q=Debian">Debian</a> - Devuan 2.0<span class="comments"> - <a href="/forums/node/1007517">51 Comments</a></span></div>
+						</article><article class="important">
+							<header><a href="/vr.php?view=26011">Ryzen 5 2400G Radeon Vega Linux OpenGL/Vulkan Gaming Benchmarks</a></header>
+							<p>Here are our initial performance figures for the Vega graphics found on the newly-released Ryzen 5 2400G &quot;Raven Ridge&quot; APU under Linux and testing both OpenGL and Vulkan graphics benchmarks. CPU tests as well as benchmarks of the Ryzen 3 2200G under Linux are forthcoming on Phoronix.</p>
+							<div class="details">13 February 06:00 PM EST - <a href="?page=category&amp;item=Processors">Processors</a><span class="comments"> - <a href="/forums/node/1007476">75 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Qualcomm-SDM845-Display">Qualcomm Rolls Out ~110k Lines Of New Kernel Code For Snapdragon 845 Display Support</a></header>
+							<p>Qualcomm in cooperation with Google developers and Rob Clark of Freedreno/MSM has sent out a set of kernel patches amounting to over 110,000 lines of new kernel code for the MSM DRM driver to bring-up display support for the SDM845.</p>
+							<div class="details">13 February 04:25 PM EST - <a href="?page=news_topic&amp;q=Linux+Kernel">Linux Kernel</a> - SDM845<span class="comments"> - <a href="/forums/node/1007467">26 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Steam-Beta-Input-13-Feb">Steam Updated With Improved Joystick/Controller Support</a></header>
+							<p>Valve has made available a new Steam client beta that this time around has some interesting updates on the input side.</p>
+							<div class="details">13 February 03:07 PM EST - <a href="?page=news_topic&amp;q=Valve">Valve</a> - Steam Beta<span class="comments"> - <a href="/forums/node/1007451">1 Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Intel-Ice-Lake-Mesa">Intel Sends Out Initial Open-Source Mesa 3D Driver Patches For Ice Lake</a></header>
+							<p>One month ago Intel's Open-Source Technology Center began posting the initial Linux driver enablement for Icelake "Gen 11" graphics, the generation succeeding this year's Cannonlake "Gen 10" hardware. That initial work focused on the DRM kernel driver while now they have posted the first Mesa patches.</p>
+							<div class="details">13 February 02:44 PM EST - <a href="?page=news_topic&amp;q=Intel">Intel</a> - Intel Ice Lake<span class="comments"> - <a href="/forums/node/1007445">1 Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=X.Org-Server-1.19.7-Prep">X.Org Server 1.19.7 Is Being Prepared For Ubuntu With OutputClass Improvements</a></header>
+							<p>With the feature-packed X.Org Server 1.20 going to be too late to make it into the April release of Ubuntu 18.04 LTS, a new X.Org Server point release is being prepared by an Ubuntu developer that does include some basic new functionality.</p>
+							<div class="details">13 February 11:01 AM EST - <a href="?page=news_topic&amp;q=Ubuntu">Ubuntu</a> - xorg-server 1.19.7<span class="comments"> - <a href="/forums/node/1007402">11 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Qt-5.10.1-Released">Qt 5.10.1 Ships With More Than 300 Bug Fixes</a></header>
+							<p>The Qt Company has announced the availability of Qt 5.10.1, the first bug-fix release to Qt 5.10 that shipped back in December.</p>
+							<div class="details">13 February 07:55 AM EST - <a href="?page=news_topic&amp;q=Qt">Qt</a> - Qt 5.10.1<span class="comments"> - <a href="/forums/node/1007364">7 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Rise-Tomb-Raider-Linux">Feral Is Bringing Rise of the Tomb Raider To Linux</a></header>
+							<p>Feral Interactive has announced today that they are porting Rise of the Tomb Raider to Linux.</p>
+							<div class="details">13 February 06:23 AM EST - <a href="?page=news_topic&amp;q=Linux+Gaming">Linux Gaming</a> - Rise of the Tomb Raider<span class="comments"> - <a href="/forums/node/1007341">53 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=FOSDEM-2018-Recap">A Recap Of The Many Interesting Presentations At FOSDEM 2018</a></header>
+							<p>Over the past week and a half we have highlighted many of the interesting presentations that took place at the annual Free Open-Source Developers' European Meeting (FOSDEM) in Brussels. Here's a look back if you are behind on your Phoronix reading.</p>
+							<div class="details">13 February 06:00 AM EST - <a href="?page=news_topic&amp;q=Linux+Events">Linux Events</a> - FOSDEM 2018<span class="comments"> - <a href="/forums/node/1007333">2 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Raspberry-Pi-VC4-KMS-More-VC5">Raspberry Pi VC4 Working On Polishing KMS Support, Continued VC5 Progress</a></header>
+							<p>Broadcom's Eric Anholt has shared another routine status update about his ongoing work with the open-source VC4 graphics driver supporting current generation Raspberry Pi hardware as well as his work on the next-gen Broadcom VC5 open-source graphics driver.</p>
+							<div class="details">13 February 05:23 AM EST - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - Raspberry Pi Open-Source Graphics<span class="comments"> - <a href="/forums/node/1007329">4 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Intel-GVT-Almost-Baked">Local Virtual GPU Display Support Is About Ready For Intel Linux Systems</a></header>
+							<p>Many of you have expressed interest in Intel's virtual GPU pass-through support "GVT" and with Linux 4.16 the kernel-side bits have come together for local vGPU display support.</p>
+							<div class="details">13 February 05:07 AM EST - <a href="?page=news_topic&amp;q=Intel">Intel</a> - Intel GVT<span class="comments"> - <a href="/forums/node/1007326">7 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Libinput-1.10-Released">Libinput 1.10 Released With Better Palm Detection, Drops Touchpad Hysteresis</a></header>
+							<p>Red Hat's Peter Hutterer has announced the release of libinput 1.10, the latest feature release of this input handling library used by Wayland-based Linux desktops and optionally by those still using the X.Org Server.</p>
+							<div class="details">13 February 04:55 AM EST - <a href="?page=news_topic&amp;q=Wayland">Wayland</a> - libinput 1.10<span class="comments"> - <a href="/forums/node/1007322">5 Comments</a></span></div>
+						</article><h2>12 February</h2><article>
+							<header><a href="?page=news_item&amp;px=Xorg-Server-Non-Desktop-Lease">X.Org Server Patches Updated For Non-Desktop &amp; Lease Handling</a></header>
+							<p>Keith Packard has sent out his latest patches for implementing the non-desktop and DRM lease functionality from within the X.Org Server. This work also includes the relevant DDX bits being wired through for the xf86-video-modesetting driver.</p>
+							<div class="details">12 February 06:47 PM EST - <a href="?page=news_topic&amp;q=X.Org">X.Org</a> - xorg-server<span class="comments"> - <a href="/forums/node/1007283">9 Comments</a></span></div>
+						</article><article class="important">
+							<header><a href="/vr.php?view=26010">RADV Radeon Vulkan Driver Is Still A Better Bet Than AMDVLK In February 2018</a></header>
+							<p>With the AMDVLK Radeon Vulkan driver that AMD open-sourced in December continuing to be updated in weekly batches with new Vulkan extensions / features / performance optimizations and the RADV Mesa-based Radeon Vulkan driver continuing to march to its own beat, I have spent the past few days conducting some fresh benchmarks between the AMDVLK and RADV Vulkan drivers with RX 560, RX 580, and RX Vega 64 graphics cards.</p>
+							<div class="details">12 February 03:36 PM EST - <a href="?page=category&amp;item=Display+Drivers">Display Drivers</a><span class="comments"> - <a href="/forums/node/1007244">53 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=KDE-Frameworks-5.43">KDE Frameworks 5.43 Released With KHolidays Module, glTF/Coillada Highlighting</a></header>
+							<p>Today marks the release of KDE Frameworks 5.43, the latest monthly update to this set of add-on libraries complementing the functionality found in the Qt5 tool-kit.</p>
+							<div class="details">12 February 02:00 PM EST - <a href="?page=news_topic&amp;q=KDE">KDE</a> - KDE Frameworks 5.43.0<span class="comments"> - <a href="/forums/node/1007225">7 Comments</a></span></div>
+						</article><article class="important">
+							<header><a href="/vr.php?view=26004">19-Way CPU Comparison On Ubuntu With Linux 4.15</a></header>
+							<p>Following the release of the Linux 4.15 kernel with KPTI and Retpoline introduction, many Phoronix readers were interested in seeing a fresh Linux CPU performance comparison. For those reasons plus in preparing for the Raven Ridge testing, here are benchmarks of 19 different systems when using Ubuntu x86_64 with the Linux 4.15 stable kernel.</p>
+							<div class="details">12 February 12:40 PM EST - <a href="?page=category&amp;item=Processors">Processors</a><span class="comments"> - <a href="/forums/node/1007210">8 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=AMDGPU-DC-34-More-With-Raven">34 More Patches Roll Out For AMDGPU DC With Raven Ridge Fixes Plus Color Management</a></header>
+							<p>Open-source AMD Linux driver developers have started off the week by posting 34 more patches for the "DC" display code stack that was mainlined in Linux 4.15 and further improved with Linux 4.16. With these latest patches that begin the queue for Linux 4.17 there are yet more AMDGPU DC improvements and in particular Raven Ridge fixes.</p>
+							<div class="details">12 February 12:37 PM EST - <a href="?page=news_topic&amp;q=Radeon">Radeon</a> - Raven Fixings<span class="comments"> - <a href="/forums/node/1007212">7 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Xorgproto-2018.2">Xorgproto 2018.2 Released To Fix The Fallout Of This New X.Org Package</a></header>
+							<p>Last week marked the inaugural release of Xorgproto, a new package consisting of all the X.Org protocol headers rather than being in standalone packages now that X.Org Server development is slowing down and that many of these protocol headers wind up getting updated at the same time. Today marks the Xorgproto 2018.2 release.</p>
+							<div class="details">12 February 11:36 AM EST - <a href="?page=news_topic&amp;q=X.Org">X.Org</a> - Xorg Protocols<span class="comments"> - <a href="/forums/node/1007196">1 Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Wayland-1.15-For-April">Wayland 1.15 &amp; Weston 4.0 Now Planned For Release In April</a></header>
+							<p>Wayland 1.15 and the Weston 4.0 compositor had been planned for release in February but Wayland developers decided there was still enough material on the verge of landing that they decided to delay the release. A new release schedule has now been put forward for getting these updates out in April.</p>
+							<div class="details">12 February 10:58 AM EST - <a href="?page=news_topic&amp;q=Wayland">Wayland</a> - Wayland Release Schedule<span class="comments"> - <a href="/forums/node/1007188">16 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Virtual-GPU-Access-GLES-Contain">Google &amp; Collabora Working On OpenGL ES 2.0 Virtualized GPU Access For Containers</a></header>
+							<p>Robert Foss of Collabora has shared some work they are engaged in with Google for virtualizing GPU access and allowing for OpenGL ES 2.0 acceleration for containers.</p>
+							<div class="details">12 February 10:41 AM EST - <a href="?page=news_topic&amp;q=Virtualization">Virtualization</a> - VirGL-Based<span class="comments"> - <a href="/forums/node/1006842">3 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Ryzen-Raven-Ridge-Tuesday">Ryzen 3 2200G + Ryzen 5 2400G Linux Benchmarks Coming Tomorrow</a></header>
+							<p>Tomorrow I will be posting our initial benchmarks of the Ryzen 3 2200G and Ryzen 5 2400G "Raven Ridge" APUs with the Zen CPU cores plus Vega graphics.</p>
+							<div class="details">12 February 09:27 AM EST - <a href="?page=news_topic&amp;q=AMD">AMD</a> - Raven Ridge<span class="comments"> - <a href="/forums/node/1007172">28 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Xeon-Gold-EPYC-Linux-4.15">EPYC vs. Xeon Gold In Nearly 200 Tests With Ubuntu On Linux 4.15</a></header>
+							<p>Coming later today is a large Intel/AMD CPU comparison using the latest Linux 4.15 stable kernel that is mitigated for Spectre and Meltdown and using around two dozen tests. For the high-end Xeon Gold and EPYC servers, I ran close to 200 tests on those platforms.</p>
+							<div class="details">12 February 08:58 AM EST - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - Linux 4.15<span class="comments"> - <a href="/forums/node/1007169">1 Comment</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=DTrace-For-Linux-2018">Oracle Still Working On DTrace For Linux In 2018</a></header>
+							<p>A decade ago Linux users were clamoring for Sun Microsystems to bring Solaris' DTrace and ZFS to Linux. While there are still petitions for Oracle to more liberally license ZFS so it could see mainline Linux support, it's been years since hearing much interest in DTrace for Linux. Over time other dynamic tracing implementations have come about and improved in comparison to DTrace, but for those still wanting this dynamic tracing framework that originated at Sun Microsystems, Oracle remains working on the Linux port.</p>
+							<div class="details">12 February 08:08 AM EST - <a href="?page=news_topic&amp;q=Oracle">Oracle</a> - DTrace<span class="comments"> - <a href="/forums/node/1007153">8 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Python-3-FOSDEM-2018">A Look Back At Python 3.0 After 10 Years</a></header>
+							<p>This year marks one decade since the release of Python 3. Red Hat's Victor Stinner who is also a CPython core developer provided a retrospective on Python 3 at last week's FOSDEM conference.</p>
+							<div class="details">12 February 06:47 AM EST - <a href="?page=news_topic&amp;q=Free+Software">Free Software</a> - Python 3<span class="comments"> - <a href="/forums/node/1007141">21 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Freedreno-Early-2018">Freedreno Gallium3D Tackling NIR Optimizations &amp; More In 2018</a></header>
+							<p>Freedreno project leader Rob Clark who is employed by Red Hat has provided a status update on his activities around this reverse-engineered, open-source Qualcomm Adreno graphics driver.</p>
+							<div class="details">12 February 06:22 AM EST - <a href="?page=news_topic&amp;q=Mesa">Mesa</a> - Freedreno<span class="comments"> - <a href="/forums/node/1007137">Add A Comment</a></span></div>
+						</article><h2>11 February</h2><article>
+							<header><a href="?page=news_item&amp;px=Linux-4.16-rc1-Kernel">Linux 4.16-rc1 Kernel Released With Many Changes</a></header>
+							<p>Just like clockwork, the first release candidate of Linux 4.16 is now available.</p>
+							<div class="details">11 February 06:43 PM EST - <a href="?page=news_topic&amp;q=Linux+Kernel">Linux Kernel</a> - Linux 4.16<span class="comments"> - <a href="/forums/node/1007074">17 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Raven-Ridge-Desktop-Tomorrow">Raven Ridge Desktop APUs Come Out Tomorrow, The Likely Linux Requirements</a></header>
+							<p>For those that haven't been paying attention or have lost track of time, the first two Raven Ridge desktop APUs are expected to become available tomorrow with their Zen CPU cores and Vega graphics.</p>
+							<div class="details">11 February 01:41 PM EST - <a href="?page=news_topic&amp;q=AMD">AMD</a> - Raven Ridge<span class="comments"> - <a href="/forums/node/1007042">37 Comments</a></span></div>
+						</article><article class="important">
+							<header><a href="/vr.php?view=25996">A Look At The Plethora Of Linux 4.16 Kernel Features &amp; Changes</a></header>
+							<p>After the lengthy Linux 4.15 kernel cycle, the past two weeks have marked the Linux 4.16 merge window. Yet again it's been another heavy feature period for the kernel. There is still a lot of mitigation work going on for most CPU architectures surrounding Spectre and also Meltdown, the open-source graphics drivers have continued getting better, various CPU improvements are present, the VirtualBox Guest driver was mainlined, and dozens of other notable changes for Linux 4.16. Take a look.</p>
+							<div class="details">11 February 12:00 PM EST - <a href="?page=category&amp;item=Software">Software</a><span class="comments"> - <a href="/forums/node/1007031">5 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=AMDVLK-On-Chip-GS-New-Ext">AMDVLK Driver Updated With New Extension, Better Geometry Shader Support</a></header>
+							<p>The AMD developers working on their official, cross-platform Vulkan driver have carried out another weekly update to their AMDVLK public source tree.</p>
+							<div class="details">11 February 09:09 AM EST - <a href="?page=news_topic&amp;q=Radeon">Radeon</a> - AMDVLK<span class="comments"> - <a href="/forums/node/1006999">9 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=OpenBenchmarking-29-Million">OpenBenchmarking.org Serves Up Its 29 Millionth Test/Suite Benchmark Download</a></header>
+							<p>In a new record for us, OpenBenchmarking.org has served up over one million test profile / test suite downloads in just over one month! That now puts the total test/suite downloads its served to Phoronix Test Suite at over 29,000,000 downloads.</p>
+							<div class="details">11 February 08:15 AM EST - <a href="?page=news_topic&amp;q=Phoronix+Test+Suite">Phoronix Test Suite</a> - 29,000,000<span class="comments"> - <a href="/forums/node/1006991">2 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=EOMA68-2018-Shipping-Plans">Remember The EOMA68 Computer Card Project? It Hopes To Ship This Year</a></header>
+							<p>The EOMA68 computer card project is the open-source hardware effort that aims to be Earth-friendly and allow for interchangeable computer cards that can be installed in laptop housings and other devices. The ambitious concept relying upon ARM SoCs raised more than $170k USD via crowdfunding in 2016 but its lineage dates back to the failed Improv dev board as well as the failed KDE Vivaldi tablet years earlier. It turns out in 2018 there is hope of EOMA68 hardware finally shipping.</p>
+							<div class="details">11 February 07:45 AM EST - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - EOMA68<span class="comments"> - <a href="/forums/node/1006983">17 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=Kodi-18-February-2018">The Current State Of Kodi 18 Development</a></header>
+							<p>Kodi developers have written a blog post outlining their work so far on Kodi 18 "Leia", which should be out at some point this year but with no formal release schedule yet.</p>
+							<div class="details">11 February 07:23 AM EST - <a href="?page=news_topic&amp;q=Multimedia">Multimedia</a> - Kodi 18<span class="comments"> - <a href="/forums/node/1006979">7 Comments</a></span></div>
+						</article><article>
+							<header><a href="?page=news_item&amp;px=GCC-s390-Spectre-V2-Changes">GCC Lands s390 Compiler-Side Changes For Spectre V2</a></header>
+							<p>Landing a few days ago for the Linux 4.16 kernel merge window was IBM z / s390 mitigation work for Spectre while now the necessary compiler-side changes are also present for the upcoming GCC 8 stable release.</p>
+							<div class="details">11 February 07:17 AM EST - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - GCC 8<span class="comments"> - <a href="/forums/node/1006978">2 Comments</a></span></div>
+						</article><h1 style="margin: 30px 0 40px;"><a href="?page=recent">Past 30 Days Of News</a> | <a href="?page=phoronix_articles">Articles &amp; Reviews</a> | <a href="?page=phoronix_news">News Archives</a> | <a href="/rss.php">RSS Feed</a></h1>
+<!-- google_ad_section_end -->
+					</div>
+				</div>
+				<div id="sidebar-wrap">
+					<div id="sidebar">
+					    <aside>
+						<div style="text-align: center;">
+                           					<script type='text/javascript' src='https://www.googletagservices.com/tag/js/gpt.js'>
+		googletag.pubads().definePassback('8456/IDG.Phoronix.com_Homepage', [[300,250]]).display();
+	</script>
+                        </div>
+                        </aside>
+                        <aside class="widget">
+			<header>Most Popular News This Week</header><div class="popular-list">
+                                <a href="?page=news_item&amp;px=Daniel-Joins-Valve-Driver">Valve Has Hired Another Open-Source Linux GPU Driver Developer</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=VLC-3.0-Released">VLC 3.0 Released</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Core-i9-Threadripper-Linux-4.15">Core i9 7980XE vs. Threadripper 1950X On Linux 4.15 With Ubuntu 18.04</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=GNOME-Alt-Tab-Quit">GNOME Shell Gets macOS-Like Ability To Close Apps From The Alt-Tab Switcher</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=New-KDE-Slimbook-Laptop">New Slimbook KDE Plasma Ultrabook Rolled Out</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Raven-Ridge-Desktop-Tomorrow">Raven Ridge Desktop APUs Come Out Tomorrow, The Likely Linux Requirements</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Steam-Audio-TrueAudio-Next">Steam Audio 2.0 Adds AMD TrueAudio Next Support</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=KDE-Flash-Drive-Security-Bug">KDE Plasma Had A Silly But Serious Security Bug</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=VLC-3.0-Imminent">VLC 3.0 Should Be Out By The End Of The Week</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Ubuntu-18.04-Snap-Policy">Ubuntu 18.04 LTS Policy Forming For Allowing Snaps By Default</a>
+                            </div>
+<header>Popular In The Forums</header><div class="popular-list">
+                                <a href="/forums/node/1007517&amp;goto=newpost">Devuan 2.0 Reaches Beta, Debian Without Systemd & Now Based On Stretch</a>
+                                <span class="comments">50 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1007476&amp;goto=newpost">Ryzen 5 2400G Radeon Vega Linux OpenGL/Vulkan Gaming Benchmarks</a>
+                                <span class="comments">75 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1007341&amp;goto=newpost">Feral Is Bringing Rise of the Tomb Raider To Linux</a>
+                                <span class="comments">53 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1007244&amp;goto=newpost">RADV Radeon Vulkan Driver Is Still A Better Bet Than AMDVLK In February 2018</a>
+                                <span class="comments">53 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1006392&amp;goto=newpost">Valve Has Hired Another Open-Source Linux GPU Driver Developer</a>
+                                <span class="comments">52 Comments</span>
+                            </div>
+                        </aside>
+			<aside>
+			<div style="text-align: center;">
+                          <script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "300x250,160x600,300x600";
+//--></script>
+<script type="text/javascript" src="https://tags.expo9.exponential.com/tags/Phoronixcom/ROS/tags.js"></script>
+                        </div>
+                        </aside>
+
+                        <aside class="widget">
+			<header>Latest Featured Articles</header><div class="popular-list">
+                                <a href="/vr.php?view=26019">AMD Vega 8 Graphics Performance On Linux With The Ryzen 3 2200G</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=26015">AMD Ryzen 3 2200G + Ryzen 5 2400G Linux CPU Performance, 21-Way Intel/AMD Comparison</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=26011">Ryzen 5 2400G Radeon Vega Linux OpenGL/Vulkan Gaming Benchmarks</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=26010">RADV Radeon Vulkan Driver Is Still A Better Bet Than AMDVLK In February 2018</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=26004">19-Way CPU Comparison On Ubuntu With Linux 4.15</a>
+                            </div>
+<header>Popular Articles In The Past</header><div class="popular-list">
+                                <a href="?page=news_item&amp;px=GNOME-3.28-Beta-Released">GNOME 3.28 Beta Released With Many Improvements</a>
+                                <span class="comments">Yesterday</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Daniel-Joins-Valve-Driver">Valve Has Hired Another Open-Source Linux GPU Driver Developer</a>
+                                <span class="comments">7 Days Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Linux-4.16-vboxguest">VirtualBox Guest Driver Being Mainlined With Linux 4.16</a>
+                                <span class="comments">One Month Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Debian-Buster-Wants-To-Drop-Qt4">Debian Buster Hopes To Drop Qt4</a>
+                                <span class="comments">Six Months Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Flatpak-0.8.3-Released">Flatpak 0.8.3 Released, Can Now Work With NVIDIA's Linux Driver</a>
+                                <span class="comments">One Year Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=FFmpeg-3.0-Released">FFmpeg 3.0 Released, Supports VP9 VA-API Acceleration</a>
+                                <span class="comments">Two Years Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=GNOME-3.x-Three-Things">Three Things That Annoy Me With Using GNOME 3</a>
+                                <span class="comments">Three Years Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=MTMwMjA">Red Hat Picks Up Another Graphics Driver Developer</a>
+                                <span class="comments">Five Years Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=NjMzNQ">ATI R700 Series Gain ALSA HDMI Audio</a>
+                                <span class="comments">Ten Years Ago</span>
+                            </div>
+                        </aside>
+			<aside>
+						<div style="text-align: center;">
+                           				<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<div id='div-pg-ad-1506416552-2'>
+  <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.pubads().display('/8095840/.2_6875.7_phoronix.com_tier1', [300, 600], 'div-pg-ad-1506416552-2'); });
+  </script>
+</div>
+
+                       				 </div>
+                        </aside>
+                        <aside class="widget">
+                            <header>Support Phoronix</header>
+                            <p>The mission at Phoronix since 2004 has centered around enriching the Linux hardware experience. In addition to supporting our site through advertisements, you can help by <a href="?page=phoronix_premium">subscribing to Phoronix Premium</a>. You can also use our <a href="http://www.tkqlhce.com/click-3677526-10515887-1435708588000">NewEgg.com</a> shopping links when making online purchases or contribute to Phoronix through a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3778540">PayPal tip</a>.</p>
+                        </aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		    <div id="footer-content">
+			<p align="center"></p>
+		        <div id="footer-left">
+		        <div id="footer-left-content">
+		            <div class="extra-info">
+		                <header>Phoronix Media</header>
+		                <hr/>
+		                <ul>
+		                    <li><a href="http://www.phoronix-test-suite.com/">Phoronix Test Suite</a></li>
+		                    <li><a href="http://openbenchmarking.org/">OpenBenchmarking.org</a></li>
+		                    <li><a href="http://www.phoromatic.com/">Phoromatic</a></li>
+		                    <li><a href="http://www.linuxbenchmarking.com/">LinuxBenchmarking.com</a></li>
+		                </ul>
+		            </div>
+		            <div class="extra-info">
+		                <header>Phoronix Premium</header>
+		                <hr/>
+		                <a href="?page=phoronix_premium"><ul>
+                            <li>Support Phoronix</li>
+		                    <li>While Having Ad-Free Browsing,</li>
+                            <li>Single-Page Article Viewing</li>
+                        </ul></a>
+		            </div>
+		            <div class="extra-info">
+		                <header>Share</header>
+		                <hr/>
+		                <ul>
+		                    <li><a href="https://facebook.com/Phoronix">Facebook</a></li>
+		                    <li><a href="https://twitter.com/Phoronix">Twitter</a></li>
+		                    <li><a href="https://www.google.com/+phoronix">Google Plus</a></li>
+		                </ul>
+		            </div>
+		       </div>
+		       </div>
+		       <div id="footer-right">
+		            <div class="extra-info">
+		                <ul>
+		                <li><p><a href="http://www.phoronix-media.com/?k=legal">Legal Disclaimer</a> | <a href="http://www.phoronix-media.com/?k=contact">Contact</a> | <a href="?page=cookies">Cookie Policy</a></p></li>
+                        <li><p>Copyright &copy; 2004 - 2018 by <a href="http://www.phoronix-media.com/">Phoronix Media</a>.</p></li>
+                        <li><p>All trademarks used are properties of their respective owners. All rights reserved.</p></li>
+				</ul>
+		            </div>
+		        </div>
+		     </div>		   
+		</div>
+				<script type="text/javascript">
+		    function lmm () {
+		        if (litemenu.style.zIndex > 0)
+		            litemenu.style.zIndex = -1;
+		        else
+		            litemenu.style.zIndex = 1;
+		    }
+		    	    
+            menubutton.addEventListener('click', function() { lmm(); }, false);
+            closelid.addEventListener('click', function() { litemenu.style.zIndex = -1;}, false);
+		</script>
+					</body>
+</html>

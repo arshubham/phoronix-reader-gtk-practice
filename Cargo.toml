@@ -1,0 +1,8 @@
+[package]
+name = "phoronix-reader"
+version = "0.1.0"
+authors = ["Shubham Arora <shubhamarora@protonmail.com>"]
+
+[dependencies]
+hyper = "0.11.18"
+select = {git = "https://github.com/utkarshkukreti/select.rs.git"}
